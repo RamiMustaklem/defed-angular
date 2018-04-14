@@ -10,14 +10,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToolbarsModule } from "./toolbars/toolbars.module";
+import { NavbarsModule } from "./navbars/navbars.module";
 
 @NgModule({
   imports: [
     CommonModule,
-    ToolbarsModule
+    ToolbarsModule,
+    NavbarsModule
   ],
   exports: [
-    ToolbarsModule
+    ToolbarsModule,
+    NavbarsModule
   ],
   declarations: []
 })

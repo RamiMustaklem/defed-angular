@@ -1,0 +1,22 @@
+<mat-sidenav-container class="container" autosize>
+  <mat-sidenav #sidenav class="sidenav" mode="side" opened="true">
+
+    <mat-nav-list>
+      <mat-list-item>
+        <button mat-icon-button (click)="isExpanded = !isExpanded">
+          <mat-icon *ngIf="!isExpanded">chevron_right</mat-icon>
+          <mat-icon *ngIf="isExpanded">chevron_left</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon mat-list-icon>home</mat-icon>
+        <p matLine *ngIf="isExpanded">Home</p>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <div class="sidenav-content">
+    Main content that resizes properly
+  </div>
+
+</mat-sidenav-container>
