@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'defed-toolbar',
@@ -6,8 +6,10 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./defed-toolbar.component.scss'],
   inputs: ['title']
 })
-export class DEFEDToolbarComponent implements OnInit {
+export class DefedToolbarComponent implements OnInit {
   title: string = "";
+
+  constructor() { }
 
   ngOnInit () {
     if (!this.title) {
